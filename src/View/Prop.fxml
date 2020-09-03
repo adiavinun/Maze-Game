@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.PropertiesController">
+   <children>
+      <Label layoutX="150.0" layoutY="24.0" prefHeight="67.0" prefWidth="150.0" text="Properties" textFill="#1a0583">
+         <font>
+            <Font name="David" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="9.0" layoutY="109.0" prefHeight="34.0" prefWidth="261.0" text="The maze generater algorithm: " textFill="#1a0583">
+         <font>
+            <Font name="David Bold" size="18.0" />
+         </font></Label>
+       <Label fx:id="lbl_generate" layoutX="265.0" layoutY="118.0" text="${controller.generate}" textFill="#1a0583">
+           <Font name="David Bold" size="18.0" />
+       </Label>
+      <Label layoutX="9.0" layoutY="168.0" prefHeight="34.0" prefWidth="211.0" text="The searching algorithm: " textFill="#1a0583">
+       <font>
+           <Font name="David Bold" size="18.0" />
+       </font></Label>
+       <Label fx:id="lbl_search" layoutX="265.0" layoutY="176.0" text="${controller.search}" textFill="#1a0583">
+           <Font name="David Bold" size="18.0" />
+       </Label>
+       <Label layoutX="14.0" layoutY="223.0" prefHeight="34.0" prefWidth="184.0" text="Number of Threads: " textFill="#1a0583">
+       <font>
+           <Font name="David Bold" size="18.0" />
+       </font></Label>
+       <Label fx:id="lbl_threads" layoutX="265.0" layoutY="232.0" text="${controller.numThreads}" textFill="#1a0583">
+           <Font name="David Bold" size="18.0" />
+       </Label>
+   </children>
+</AnchorPane>
